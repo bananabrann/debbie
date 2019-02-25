@@ -1,5 +1,4 @@
 # C'ing the Light
-For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4'. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
 In this readme, I will define what the MVP and Gold Medal goals are, as well as adding the things that I have learned about C in the order that was learned.
 
 # The Goal
@@ -23,9 +22,9 @@ After reaching MVP, it would be nice if Debbie ...
 - [ ] ... displayed a brief greeting when first booting.
 - [ ] ... had an external shell protecting her inner bits.
 
-___
+___ 
 
 # What I Learned About C
+For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4'. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
 
-
-
+### Void
