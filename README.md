@@ -27,7 +27,17 @@ ___
 # What I Learned About C
 For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4. The "built" product for today is the test document on example.c.
 
+### gcc
+C cannot just be simplely run like JavaScript. It needs special programs to compile the code, and then execute the file.
+
 ### Void
 Like integers, strings, booleans, etc., void is a data type that is defined as being non-existent. In JavaScript, leaving a parameter empty does not cause any errors becasue JavaScript assumes empty parameters are void automatic. This process in not automatic in C.
 * `int myFunction(void)` The function does not take any parameters.
 * `void myFunction(int)` The function does not return anything.
+
+### Compiling
+C does not automatically compile code before it executes. I've found that executing the file prior to compiling or a fail in the compile leads to the file being removed from the disl.
+To compile, you need to download and use gcc.
+
+`gcc yourcode.c -o output` is the command line syntax for compiling. `gcc` is the npm package, `yourcode.c` is the file that you have typed, `-o` says it's an object (unsure why you need this) and the `output` is the file name you're assigning to send your compiled code. After running that, you can execute the file simply by running that file.
+So with the code above, you would just type `output` in the terminal.
