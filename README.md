@@ -28,3 +28,6 @@ ___
 For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4'. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
 
 ### Void
+Like integers, strings, booleans, etc., void is a data type that is defined as being non-existent. In JavaScript, leaving a parameter empty does not cause any errors becasue JavaScript assumes empty parameters are void automatic. This process in not automatic in C.
+* `int myFunction(void)` The function does not take any parameters.
+* `void myFunction(int)` The function does not return anything.
