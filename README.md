@@ -1,5 +1,5 @@
 # C'ing the Light
-In this readme, I will define what the MVP and Gold Medal goals are, as well as adding the things that I have learned about C in the order that was learned.
+In this readme, I will define what the MVP and Gold Medal goals are, as well as adding the things that I have learned about C in the order that was learned. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
 
 # The Goal
 The mission is build a simple robot that measures the surronding sounds and displays a decibel level. The robot will...
@@ -25,7 +25,7 @@ After reaching MVP, it would be nice if Debbie ...
 ___ 
 
 # What I Learned About C
-For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4'. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
+For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4. The "built" product for today is the test document on example.c.
 
 ### Void
 Like integers, strings, booleans, etc., void is a data type that is defined as being non-existent. In JavaScript, leaving a parameter empty does not cause any errors becasue JavaScript assumes empty parameters are void automatic. This process in not automatic in C.
