@@ -1,4 +1,11 @@
-int main(){
+int main()
+{
     printf("Hello!\n");
-    return(0);
+    
+    int a;
+    for (a = 1; a <= 10; a = a + 1)
+    {
+        printf("Woo! %d\n", a);
+    }
+    return (0);
 }

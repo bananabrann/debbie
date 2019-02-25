@@ -1,5 +1,5 @@
 # C'ing the Light
-In this readme, I will define what the MVP and Gold Medal goals are, as well as adding the things that I have learned about C in the order that was learned. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
+In this readme, I will define what the MVP and Gold Medal goals are, as well as adding the things that I have learned about C and C++ in the order that was learned. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
 
 # The Goal
 The mission is build a simple robot that measures the surronding sounds and displays a decibel level. The robot will...
@@ -24,11 +24,14 @@ After reaching MVP, it would be nice if Debbie ...
 
 ___ 
 
-# What I Learned About C
+# What I Learned About C/C++
 For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4. The "built" product for today is the test document on example.c.
 
 ### gcc
 C cannot just be simplely run like JavaScript. It needs special programs to compile the code, and then execute the file.
+
+### Xcode
+Researching and learning how to compile things, I have stumbled across great tutorials, and they use Xcode. Xcode is a compiling service for C and C++, among other languages.
 
 ### Void
 Like integers, strings, booleans, etc., void is a data type that is defined as being non-existent. In JavaScript, leaving a parameter empty does not cause any errors becasue JavaScript assumes empty parameters are void automatic. This process in not automatic in C.
@@ -40,4 +43,8 @@ C does not automatically compile code before it executes. I've found that execut
 To compile, you need to download and use gcc.
 
 `gcc yourcode.c -o output` is the command line syntax for compiling. `gcc` is the npm package, `yourcode.c` is the file that you have typed, `-o` says it's an object (unsure why you need this) and the `output` is the file name you're assigning to send your compiled code. After running that, you can execute the file simply by running that file.
-So with the code above, you would just type `output` in the terminal.
+So with the code above, you would just type `./output` in the terminal.
+
+### Puts VS \n
+`puts` is a C++ standard thingy. It will "put" whatever was passed into it into the console, and make a new line.
+`\n` is used in `printf`, where `printf` does not print a new line after whatever was passed.
