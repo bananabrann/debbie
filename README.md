@@ -1,50 +1,62 @@
-# C'ing the Light
-In this readme, I will define what the MVP and Gold Medal goals are, as well as adding the things that I have learned about C and C++ in the order that was learned. I plan on building a simple robot that will "listen" to the surronding area, and display its decibel level.
+# Debbie the Decibel Robot
+https://github.com/bananabrann/debbie
+The mission is build a simple robot that measures the surrounding sounds and displays a decibel level.
+* Has an Arduino Uno as the microprocessor.
+* Be typed in primarily C++ in Xcode.
+* Does not have any motors or moving parts/peripherals.
 
-# The Goal
-The mission is build a simple robot that measures the surronding sounds and displays a decibel level. The robot will...
-* ... be named Decibel Debbie.
-* ... be completely self-sustaining --not hooked to a computer.
-* ... have the motherboard be an Arduiono Uno.
-* ... not have any moving motors or peripherals.
-* ... use an external microphone to detect sound.
-* ... display the decibels on a 7-segment LED display.
+## Background Research
+Four companies that use the same technologies/languages used in this idea.
+1. Thermo Fisher Scientific and every company in the Biomedical and Life Sciences.
+1. Bethesda Games, or any video game company.
 
-### MVP
-(Most Viable Product)
-At the minimum, Debbie should ...
-- [ ] ... successfully read the decibel level.
-- [ ] ... successfully display the decibel level.
+## Medals
+<details><summary>Click Me!</summary>
 
-### Gold Medal
+
+### 🥉Bronze Medal, MVP
+(Minimum Viable Product) For the minimum requirement, the robot will...
+
+- [x] be named Decibel Debbie.
+- [ ] be completely self-sustaining --not hooked to a computer.
+- [ ] use an external microphone to detect sound, then ↓...
+- [ ] successfully display the decibels on a 7-segment LED display.
+
+### 🥈Silver Medal
 After reaching MVP, it would be nice if Debbie ...
-- [ ] ... had an additional display where it displays the text of sounds of a similar decibel level that is currently being picked up. E.g., displayed "vacuum clearner" when the decibel level is between 75 to 85 dB.
-- [ ] ... displayed a brief greeting when first booting.
-- [ ] ... had an external shell protecting her inner bits.
 
-___ 
+- [ ] Display a little graph, or colored lights that correspond with the receiving decibels.
+- [ ]  has an external shell protecting her inner bits.
 
-# What I Learned About C/C++
-For General Assembly teach yourself day, my focus is to understand the basic syntax of C for project 4. The "built" product for today is the test document on example.c.
+### 🥇Gold Medal
+For final state of Debbie, Debbie will...
+- [ ] will have a protective external shell to guard her inner bits.
+- [ ] have an additional display that displays the text of sounds of a similar decibel level that is currently being picked up. E.g., displayed "vacuum cleaner" when the decibel level is between 75 to 85 dB.
 
-### gcc
-C cannot just be simplely run like JavaScript. It needs special programs to compile the code, and then execute the file.
+</details>
 
-### Xcode
-Researching and learning how to compile things, I have stumbled across great tutorials, and they use Xcode. Xcode is a compiling service for C and C++, among other languages.
+### The Plan
+1. Research Arduino/C++ language, learn the basics on the framework of Arduino's C++.
+1. Test interface from computer to board by developing a test program that displays and activates a light on the Arduino.
+1. Build prototype of Debbie.
 
-### Void
-Like integers, strings, booleans, etc., void is a data type that is defined as being non-existent. In JavaScript, leaving a parameter empty does not cause any errors becasue JavaScript assumes empty parameters are void automatic. This process in not automatic in C.
-* `int myFunction(void)` The function does not take any parameters.
-* `void myFunction(int)` The function does not return anything.
+___
+# 2. Traders of North, but 1p VS Computer
+Traders of the North was my Project 1 game. I'm very passionate about this game, as I think it's fun (when you know how to play... potentially) and does a great job at showing off JavaScript and CSS in logic and styling, respectfully. For the final project, this version of the game would be a production-ready game to be proudly displayed in portfolios for years to come.
 
-### Compiling
-C does not automatically compile code before it executes. I've found that executing the file prior to compiling or a fail in the compile leads to the file being removed from the disl.
-To compile, you need to download and use gcc.
+## Medals
+<details><summary>Click Me!</summary>
 
-`gcc yourcode.c -o output` is the command line syntax for compiling. `gcc` is the npm package, `yourcode.c` is the file that you have typed, `-o` says it's an object (unsure why you need this) and the `output` is the file name you're assigning to send your compiled code. After running that, you can execute the file simply by running that file.
-So with the code above, you would just type `./output` in the terminal.
+### 🥉Bronze Medal, MVP
+- [ ] Reintegrated user interface optimized for a 1 player environment.
+- [ ] Have a fully functional computer opponent.
 
-### Puts VS \n
-`puts` is a C++ standard thingy. It will "put" whatever was passed into it into the console, and make a new line.
-`\n` is used in `printf`, where `printf` does not print a new line after whatever was passed.
+### 🥈Silver Medal
+- [ ] Be able to select which viking to play as.
+- [ ] Have a fully-functional tutorial and manual.
+
+### 🥇Gold Medal
+- [ ] Be legally publishable. This primarily means include original, non-copyrighted artwork.
+- [ ] Figure out what to do with mobile.
+
+</details>
