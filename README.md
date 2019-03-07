@@ -39,24 +39,3 @@ For final state of Debbie, Debbie will...
 1. Research Arduino/C++ language, learn the basics on the framework of Arduino's C++.
 1. Test interface from computer to board by developing a test program that displays and activates a light on the Arduino.
 1. Build prototype of Debbie.
-
-___
-# 2. Traders of North, but 1p VS Computer
-Traders of the North was my Project 1 game. I'm very passionate about this game, as I think it's fun (when you know how to play... potentially) and does a great job at showing off JavaScript and CSS in logic and styling, respectfully. For the final project, this version of the game would be a production-ready game to be proudly displayed in portfolios for years to come.
-
-## Medals
-<details><summary>Click Me!</summary>
-
-### 🥉Bronze Medal, MVP
-- [ ] Reintegrated user interface optimized for a 1 player environment.
-- [ ] Have a fully functional computer opponent.
-
-### 🥈Silver Medal
-- [ ] Be able to select which viking to play as.
-- [ ] Have a fully-functional tutorial and manual.
-
-### 🥇Gold Medal
-- [ ] Be legally publishable. This primarily means include original, non-copyrighted artwork.
-- [ ] Figure out what to do with mobile.
-
-</details>
