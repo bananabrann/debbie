@@ -18,20 +18,22 @@ Four companies that use the same technologies/languages used in this idea.
 (Minimum Viable Product) For the minimum requirement, the robot will...
 
 - [x] be named Decibel Debbie.
-- [ ] be completely self-sustaining --not hooked to a computer.
-- [ ] use an external microphone to detect sound, then ↓...
-- [ ] successfully display the decibels on a 7-segment LED display.
+- [x] be completely self-sustaining --not hooked to a computer.
+- [x] use an external microphone to detect sound, then ↓...
+- [x] successfully display the decibels on a 7-segment LED display.
 
 ### 🥈Silver Medal
 After reaching MVP, it would be nice if Debbie ...
 
-- [ ] Display a little graph, or colored lights that correspond with the receiving decibels.
-- [ ]  has an external shell protecting her inner bits.
+- [ ] displayed a little graph, or colored lights that correspond with the receiving decibels.
+- [ ] has an external shell protecting her inner bits.
 
 ### 🥇Gold Medal
 For final state of Debbie, Debbie will...
 - [ ] will have a protective external shell to guard her inner bits.
-- [ ] have an additional display that displays the text of sounds of a similar decibel level that is currently being picked up. E.g., displayed "vacuum cleaner" when the decibel level is between 75 to 85 dB.
+- [x] have an additional display that displays the text of sounds of a similar decibel level that is currently being picked up. E.g., displayed "vacuum cleaner" when the decibel level is between 75 to 85 dB.
+
+Note: The Silver and Gold is not in any particular order; it's just the perceived difficulty.
 
 </details>
 
