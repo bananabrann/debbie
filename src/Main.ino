@@ -7,6 +7,10 @@ int microphoneGate = 6;
 int microphoneLED = 13;
 int microphoneEnvelope = A0;
 
+
+
+
+        
 void setup()
 {
     Serial.begin(9600);
@@ -29,13 +33,19 @@ void loop()
 
     if (statusSensor == 1)
     {
-        lcd.clear();
         digitalWrite(microphoneLED, HIGH);
 
+        lcd.clear();   
+        
+        lcd.setCursor(0,0);
         lcd.print(receivingValueInDb);
         lcd.print(" Db, (");
         lcd.print(receivingValue);
         lcd.print("V)");
+        
+        lcd.setCursor(0,1);
+
+        lcd.print("...");
 
         delay(1000);
     }
