@@ -7,10 +7,6 @@ int microphoneGate = 6;
 int microphoneLED = 13;
 int microphoneEnvelope = A0;
 
-
-
-
-        
 void setup()
 {
     Serial.begin(9600);
@@ -35,17 +31,68 @@ void loop()
     {
         digitalWrite(microphoneLED, HIGH);
 
-        lcd.clear();   
-        
-        lcd.setCursor(0,0);
+        lcd.clear();
+
+        lcd.setCursor(0, 0);
         lcd.print(receivingValueInDb);
         lcd.print(" Db, (");
         lcd.print(receivingValue);
         lcd.print("V)");
-        
-        lcd.setCursor(0,1);
 
-        lcd.print("...");
+        lcd.setCursor(0, 1);
+
+        if (receivingValueInDb < 20)
+        {
+            lcd.print("A watch's tick");
+        }
+        else if (receivingValueInDb >= 20 && receivingValueInDb < 30)
+        {
+            lcd.print("Whisper");
+        }
+        else if (receivingValueInDb >= 30 && receivingValueInDb < 40)
+        {
+            lcd.print("Turning a page");
+        }
+        else if (receivingValueInDb >= 40 && receivingValueInDb < 46)
+        {
+            lcd.print("Light rain");
+        }
+        else if (receivingValueInDb >= 46 && receivingValueInDb < 50)
+        {
+            lcd.print("Moderate rain");
+        }
+        else if (receivingValueInDb >= 50 && receivingValueInDb < 55)
+        {
+            lcd.print("Quiet office");
+        }
+        else if (receivingValueInDb >= 55 && receivingValueInDb < 60)
+        {
+            lcd.print("Air conditioner");
+        }
+        else if (receivingValueInDb >= 60 && receivingValueInDb < 65)
+        {
+            lcd.print("Normal conversation");
+        }
+        else if (receivingValueInDb >= 65 && receivingValueInDb < 70)
+        {
+            lcd.print("Running dryer");
+        }
+        else if (receivingValueInDb >= 70 && receivingValueInDb < 80)
+        {
+            lcd.print("Tiolet flushing");
+        }
+        else if (receivingValueInDb >= 80 && receivingValueInDb < 95)
+        {
+            lcd.print("Construction site");
+        }
+        else if (receivingValueInDb >= 95 && receivingValueInDb < 110)
+        {
+            lcd.print("Nightclub");
+        }
+        else
+        {
+            lcd.print("Wow, that's loud!");
+        }
 
         delay(1000);
     }
