@@ -3,9 +3,12 @@
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
-int soundSensor = 6;
-int soundLED = 13;
-int analogPinZero = A0;
+// int soundSensor = 6;
+int microphoneGate = 6;
+// int soundLED = 13;
+int microphoneLED = 13;
+
+int microphoneEnvelope = A0;
 
 void setup()
 {
@@ -14,38 +17,38 @@ void setup()
     lcd.begin(16, 2);
     lcd.print("listening...");
 
-    pinMode(soundSensor, INPUT);
-    pinMode(soundLED, OUTPUT);
+    pinMode(microphoneGate, INPUT);
+    pinMode(microphoneLED, OUTPUT);
 }
 
 void loop()
 {
-    int statusSensor = digitalRead(soundSensor);
-    int receivingValue = analogRead(analogPinZero);
+    interrupts();
+
+    int statusSensor = digitalRead(microphoneGate);
+    int receivingValue = analogRead(microphoneEnvelope);
     int lastReceivedReading;
 
     if (statusSensor == 1)
     {
-        lcd.display();
         lcd.clear();
-        digitalWrite(soundLED, HIGH);
+        digitalWrite(microphoneLED, HIGH);
 
         Serial.println(receivingValue);
 
         lcd.print("Reading is ");
         lcd.print(receivingValue);
 
-        delay(600);
-        lcd.clear();
+        delay(1000);
+        //        lcd.clear();
     }
     else
     {
-        digitalWrite(soundLED, LOW);
+        digitalWrite(microphoneLED, LOW);
 
-        lcd.print("Last reading: ");
-        lcd.print(receivingValue);
+        lcd.print("No reading...");
 
-        // Without this delay, the light will turn on and remain on.
-        delay(0050);
+        // There needs to be some sort of very short delay. Do not remove this.
+        delay(0100);
     }
 }
