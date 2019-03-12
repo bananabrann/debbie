@@ -26,7 +26,7 @@ Four companies that use the same technologies/languages used in this idea.
 After reaching MVP, it would be nice if Debbie ...
 
 - [ ] Display a little graph, or colored lights that correspond with the receiving decibels.
-- [ ]  has an external shell protecting her inner bits.
+- [ ] has an external shell protecting her inner bits.
 
 ### 🥇Gold Medal
 For final state of Debbie, Debbie will...
