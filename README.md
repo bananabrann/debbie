@@ -29,12 +29,12 @@ The mission is build a simple robot that measures the surrounding sounds and dis
 -  Does not have any motors or moving parts/peripherals.
 
 # The Process and Its Planning
-From baby breadboard to super intelligent AI, Decibel Debbie's path has been a huge learning experience for me. As a junior developer, tackling something like Decibel Debbie was daunting enough, yet alone tackling the software language of C++ for the microprossesor.
+From baby breadboard to super intelligent AI, Decibel Debbie's path has been a huge learning experience for me. As a junior developer, tackling something like Decibel Debbie was daunting enough, yet alone tackling the software language of C++ for the microprocessor.
 In the end, building something is very rewarding, and seeing physical actions from your code is something worth a hobby, if not a career.
 
-### Learning Basic Eletronics
+## Learning Basic Electronics
 
-The first thing to learn when starting a project you've never done before, is to learn the basics. In the first weeks of March, I sketched out, researched, and watched as many YouTube videos as I could on the basics of eletricity, breadboards, and simple LED lights.
+The first thing to learn when starting a project you've never done before, is to learn the basics. In the first weeks of March, I sketched out, researched, and watched as many YouTube videos as I could on the basics of electricity, breadboards, and simple LED lights.
 
 <details><summary>Click for Picture!</summary>
 
@@ -42,9 +42,9 @@ The first thing to learn when starting a project you've never done before, is to
 
 </details>
 
-As you can see, the circuitry is very simple. This process was maybe about a day long. The red wire is 3.3V (constant) and successfully transfers its eletricty through a resistor, to the LED, and back to the microprossesor in Ground.
+As you can see, the circuitry is very simple. This process was maybe about a day long. The red wire is 3.3V (constant) and successfully transfers its electricity through a resistor, to the LED, and back to the microprocessor in Ground.
 
-### Chaining Things Together
+## Chaining Things Together
 
 What's after one successful ligh? Two successful lights! Using the knowledge from before, adding a second light following the same scheme as before proved to be quite simple.
 
@@ -54,20 +54,20 @@ What's after one successful ligh? Two successful lights! Using the knowledge fro
 
 </details>
 
-### Controlling the Flow (Physically)
+## Controlling the Flow (Physically)
 
-Time to play with eletricity! To follow start to grasp what's happening in the breadboard, I planned out what it would look like to have things like a button control a constant flow of eletricity to a light.
+Time to play with electricity! To follow start to grasp what's happening in the breadboard, I planned out what it would look like to have things like a button control a constant flow of electricity to a light.
 
 <details><summary>Click for Picture!</summary>
 
 ![Using a button](./src/img/testing-3.jpeg)
 
 </details>s
-A viola! I now understand how the eletricity flows in the breadboard, and can start planning for more advanced circuits! 
+A viola! I now understand how the electricity flows in the breadboard, and can start planning for more advanced circuits! 
 
-### Connecting The Screen
+## Connecting The Screen
 
-Several guides were needed to figure out how to connect the screen to the microprossesor. The plan for this was to simply display fixed messages in the code to ensure the screen would work.
+Several guides were needed to figure out how to connect the screen to the microprocessor. The plan for this was to simply display fixed messages in the code to ensure the screen would work.
 Once the screen displayed fixed messages, the idea was that the microphone would send data to the microprocessor, and then the microprocessor would simply just redirect that data to the `lcd.print()` function.
 <details><summary>Click for Pictures!</summary>
 
@@ -78,22 +78,23 @@ Once the screen displayed fixed messages, the idea was that the microphone would
 </details>
 
 It was a bit of document reading and experimentally plugging things in for two days before this picture captured the very first time something displayed on the LCD screen.
-You can see it on the screen because of the birghtness, but the data is actually being received by the LCD properly. `lcd.print("hello!");` was in the code, and successfully getting to the LCD.
+You can see it on the screen because of the brightness, but the data is actually being received by the LCD properly. `lcd.print("hello!");` was in the code, and successfully getting to the LCD.
 
-### Mic Drop
+## Mic Drop
 <details><summary>Click for Picture!</summary>
 
 ![screen displays jumbled text](./src/img/testing-6.png)
 
 </details>
 
-In the code, I planned for and made sure to write clean, simple code. The code would check the microphone's pins every third of a second. The microprocessor checks its gate value. If it's TRUE (1), meaning a spike is detected, a function executes that reads the pin containing the microphone's envolope value. That value is received, and a function calls the a calculation function that returns the predicted Decibels of the sound. Then that number is passed to the LCD screen, where it then formats and prints the value.
+In the code, I planned for and made sure to write clean, simple code. The code would check the microphone's pins every third of a second. The microprocessor checks its gate value. If it's TRUE (1), meaning a spike is detected, a function executes that reads the pin containing the microphone's envelope value. That value is received, and a function calls the a calculation function that returns the predicted Decibels of the sound. Then that number is passed to the LCD screen, where it then formats and prints the value.
 
 Reading documentation of the microphone was a process, but in the end data (whatever it is) was eventually displayed. Debugging this would take the next two to three days, and would lead to the discovery that how wires are plugged in matters.
-It was a bad wire problem. The envolope wire was damaged resulting in crazy, uninterbreable(sp) sentences ,and simply needed to be replaced.
+It was a bad wire problem. The envelope wire was damaged resulting in crazy, uninterpretable sentences ,and simply needed to be replaced.
 
-# It's Alive!
-After debugging the microphone data wire issue, cleaning and cutting the wires for a higher effeciency, and formatting the printing screen to how I wanted it, Debbie finally met the Bronze Medal on March 11th, 2019!
+## It's Alive!
+After debugging the microphone data wire issue, cleaning and cutting the wires for a higher efficiency, and formatting the printing screen to how I wanted it, Debbie finally met the Bronze Medal on March 11th, 2019!
+
 <details><summary>Click for Picture!</summary>
 
 ![Debbie is alive](./src/img/Debbie.png)
