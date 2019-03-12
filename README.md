@@ -11,7 +11,7 @@ Four companies that use the same technologies/languages used in this idea.
 1. Bethesda Games, or any video game company.
 
 ## Medals
-<details><summary>Click Me!</summary>
+<!-- <details><summary>Click Me!</summary> -->
 
 
 ### 🥉Bronze Medal, MVP
@@ -25,19 +25,15 @@ Four companies that use the same technologies/languages used in this idea.
 ### 🥈Silver Medal
 After reaching MVP, it would be nice if Debbie ...
 
-- [ ] Display a little graph, or colored lights that correspond with the receiving decibels.
-- [ ] has an external shell protecting her inner bits.
+- [x] have an additional display that displays the text of sounds of a similar decibel level that is currently being picked up. E.g., displayed "vacuum cleaner" when the decibel level is between 75 to 85 dB.
 
 ### 🥇Gold Medal
 For final state of Debbie, Debbie will...
+
 - [ ] will have a protective external shell to guard her inner bits.
-- [x] have an additional display that displays the text of sounds of a similar decibel level that is currently being picked up. E.g., displayed "vacuum cleaner" when the decibel level is between 75 to 85 dB.
+- [ ] will have clean, color-coded wires along with a permanent, soldered base.
 
-Note: The Silver and Gold is not in any particular order; it's just the perceived difficulty.
-
-</details>
+<!-- </details> -->
 
 ### The Plan
-1. Research Arduino/C++ language, learn the basics on the framework of Arduino's C++.
-1. Test interface from computer to board by developing a test program that displays and activates a light on the Arduino.
-1. Build prototype of Debbie.
+The plan is located in planning/planning.md
